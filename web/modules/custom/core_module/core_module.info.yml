@@ -1,0 +1,5 @@
+name: 'Core module'
+type: module
+description: 'A module for custom logic'
+package: Custom
+core_version_requirement: ^10

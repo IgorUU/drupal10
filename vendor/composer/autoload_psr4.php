@@ -91,6 +91,7 @@ return array(
     'Micheh\\PhpCodeSniffer\\' => array($vendorDir . '/micheh/phpcs-gitlab/src'),
     'Masterminds\\' => array($vendorDir . '/masterminds/html5/src'),
     'League\\Container\\' => array($vendorDir . '/league/container/src'),
+    'Kint\\' => array($vendorDir . '/kint-php/kint/src'),
     'JsonSchema\\' => array($vendorDir . '/justinrainbow/json-schema/src/JsonSchema'),
     'Http\\Promise\\' => array($vendorDir . '/php-http/promise/src'),
     'Http\\Discovery\\' => array($vendorDir . '/php-http/discovery/src'),
