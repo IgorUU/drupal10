@@ -1,0 +1,13 @@
+uuid: 7b0f0319-0a52-4f22-9270-a0589b5909c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: DoVt_VGgVLcDD4XmVbSFzr0K17SJy9imFiYusKkJBgY
+id: taxonomy_term_publish_action
+label: 'Publish taxonomy term'
+type: taxonomy_term
+plugin: 'entity:publish_action:taxonomy_term'
+configuration: {  }
