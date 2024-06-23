@@ -865,3 +865,13 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists(__DIR__ . '/settings.ddev
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+
+/**
+ * State caching.
+ *
+ * State caching uses the cache collector pattern to cache all requested keys
+ * from the state API in a single cache entry, which can greatly reduce the
+ * amount of database queries. However, some sites may use state with a
+ * lot of dynamic keys which could result in a very large cache.
+ */
+$settings['state_cache'] = TRUE;

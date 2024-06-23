@@ -26,7 +26,7 @@ class CommandsTest extends WebDriverTestBase {
   /**
    * Tests the various Ajax Commands.
    */
-  public function testAjaxCommands() {
+  public function testAjaxCommands(): void {
     $session = $this->getSession();
     $page = $this->getSession()->getPage();
 
@@ -38,6 +38,8 @@ class CommandsTest extends WebDriverTestBase {
     // Tests the 'add_css' command.
     $page->pressButton("AJAX 'add_css' command");
     $this->assertWaitPageContains('my/file.css');
+    $this->assertSession()->elementExists('css', 'link[href="my/file.css"]');
+    $this->assertSession()->elementExists('css', 'link[href="https://example.com/css?family=Open+Sans"]');
 
     // Tests the 'after' command.
     $page->pressButton("AJAX 'After': Click to put something after the div");
@@ -137,7 +139,7 @@ Drupal.behaviors.testSettingsCommand = {
 };
 JS;
     $session->executeScript($test_settings_command);
-    // @todo: Replace after https://www.drupal.org/project/drupal/issues/2616184
+    // @todo Replace after https://www.drupal.org/project/drupal/issues/2616184
     $session->executeScript('window.jQuery("#edit-settings-command-example").mousedown();');
     $this->assertWaitPageContains('<div class="test-settings-command">42</div>');
   }
@@ -146,7 +148,7 @@ JS;
    * Tests the various Ajax Commands with legacy parameters.
    * @group legacy
    */
-  public function testLegacyAjaxCommands() {
+  public function testLegacyAjaxCommands(): void {
     $session = $this->getSession();
     $page = $this->getSession()->getPage();
 

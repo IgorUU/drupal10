@@ -19,6 +19,11 @@ parameters:
 		drupal_root: '%currentWorkingDirectory%'
 		bleedingEdge:
 			checkDeprecatedHooksInApiFiles: false
+		rules:
+			testClassSuffixNameRule: false
+			dependencySerializationTraitPropertyRule: false
+			accessResultConditionRule: false
+			classExtendsInternalClassRule: true
 		entityMapping:
 			aggregator_feed:
 				class: Drupal\aggregator\Entity\Feed
@@ -238,6 +243,12 @@ parametersSchema:
 		bleedingEdge: structure([
 			checkDeprecatedHooksInApiFiles: boolean()
 		])
+		rules: structure([
+			testClassSuffixNameRule: boolean()
+			dependencySerializationTraitPropertyRule: boolean()
+			accessResultConditionRule: boolean()
+			classExtendsInternalClassRule: boolean()
+		])
 		entityMapping: arrayOf(anyOf(
 			structure([
 				class: string()
@@ -262,6 +273,9 @@ services:
 		tags: [phpstan.broker.dynamicMethodReturnTypeExtension]
 	-
 		class: mglaman\PHPStanDrupal\Type\EntityStorage\EntityStorageDynamicReturnTypeExtension
+		tags: [phpstan.broker.dynamicMethodReturnTypeExtension]
+	-
+		class: mglaman\PHPStanDrupal\Type\EntityRepositoryReturnTypeExtension
 		tags: [phpstan.broker.dynamicMethodReturnTypeExtension]
 	-
 		class: mglaman\PHPStanDrupal\Type\EntityStorage\GetQueryReturnTypeExtension
@@ -307,7 +321,6 @@ services:
 		class: mglaman\PHPStanDrupal\DeprecatedScope\GroupLegacyScope
 		tags:
 			- phpstan.deprecations.deprecatedScopeResolver
-
 	-
 		class: mglaman\PHPStanDrupal\DeprecatedScope\DeprecationHelperScope
 		tags:

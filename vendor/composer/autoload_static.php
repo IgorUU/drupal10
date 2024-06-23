@@ -23,6 +23,10 @@ class ComposerStaticInit707f7590d632e07d7add8405a30a9cb8
         '5897ea0ac4cccf14d323035e65887801' => __DIR__ . '/..' . '/symfony/polyfill-php82/bootstrap.php',
         'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        '89efb1254ef2d1c5d80096acd12c4098' => __DIR__ . '/..' . '/twig/twig/src/Resources/core.php',
+        'ffecb95d45175fd40f75be8a23b34f90' => __DIR__ . '/..' . '/twig/twig/src/Resources/debug.php',
+        'c7baa00073ee9c61edf148c51917cfb4' => __DIR__ . '/..' . '/twig/twig/src/Resources/escaper.php',
+        'f844ccf1d25df8663951193c3fc307c8' => __DIR__ . '/..' . '/twig/twig/src/Resources/string_loader.php',
         '8e92226780215d0ec758aa7b73e0ede9' => __DIR__ . '/..' . '/open-telemetry/context/fiber/initialize_fiber_handler.php',
         '9b38cf48e83f5d8f60375221cd213eee' => __DIR__ . '/..' . '/phpstan/phpstan/bootstrap.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
@@ -204,6 +208,7 @@ class ComposerStaticInit707f7590d632e07d7add8405a30a9cb8
             'Drupal\\Component\\' => 17,
             'Drupal\\' => 7,
             'DrupalPractice\\' => 15,
+            'DrupalFinder\\' => 13,
             'DrupalCodeGenerator\\' => 20,
             'Doctrine\\Persistence\\' => 21,
             'Doctrine\\Instantiator\\' => 22,
@@ -253,8 +258,8 @@ class ComposerStaticInit707f7590d632e07d7add8405a30a9cb8
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
         ),
         'phootwork\\lang\\' => 
         array (
@@ -502,8 +507,8 @@ class ComposerStaticInit707f7590d632e07d7add8405a30a9cb8
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -547,8 +552,8 @@ class ComposerStaticInit707f7590d632e07d7add8405a30a9cb8
         ),
         'PHPStan\\' => 
         array (
-            0 => __DIR__ . '/..' . '/phpstan/phpstan-deprecation-rules/src',
-            1 => __DIR__ . '/..' . '/phpstan/phpstan-phpunit/src',
+            0 => __DIR__ . '/..' . '/phpstan/phpstan-phpunit/src',
+            1 => __DIR__ . '/..' . '/phpstan/phpstan-deprecation-rules/src',
         ),
         'PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 
         array (
@@ -686,6 +691,10 @@ class ComposerStaticInit707f7590d632e07d7add8405a30a9cb8
         array (
             0 => __DIR__ . '/..' . '/drupal/coder/coder_sniffer/DrupalPractice',
         ),
+        'DrupalFinder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/webflo/drupal-finder/src',
+        ),
         'DrupalCodeGenerator\\' => 
         array (
             0 => __DIR__ . '/..' . '/chi-teck/drupal-code-generator/src',
@@ -712,8 +721,8 @@ class ComposerStaticInit707f7590d632e07d7add8405a30a9cb8
         ),
         'Doctrine\\Common\\' => 
         array (
-            0 => __DIR__ . '/..' . '/doctrine/common/src',
-            1 => __DIR__ . '/..' . '/doctrine/event-manager/src',
+            0 => __DIR__ . '/..' . '/doctrine/event-manager/src',
+            1 => __DIR__ . '/..' . '/doctrine/common/src',
         ),
         'Dflydev\\DotAccessData\\' => 
         array (
@@ -794,7 +803,7 @@ class ComposerStaticInit707f7590d632e07d7add8405a30a9cb8
         'Behat\\Mink\\Driver\\' => 
         array (
             0 => __DIR__ . '/..' . '/behat/mink-browserkit-driver/src',
-            1 => __DIR__ . '/..' . '/behat/mink-selenium2-driver/src',
+            1 => __DIR__ . '/..' . '/lullabot/mink-selenium2-driver/src',
         ),
         'Behat\\Mink\\' => 
         array (
@@ -818,7 +827,7 @@ class ComposerStaticInit707f7590d632e07d7add8405a30a9cb8
         array (
             'WebDriver' => 
             array (
-                0 => __DIR__ . '/..' . '/instaclick/php-webdriver/lib',
+                0 => __DIR__ . '/..' . '/lullabot/php-webdriver/lib',
             ),
         ),
         'C' => 
@@ -837,10 +846,6 @@ class ComposerStaticInit707f7590d632e07d7add8405a30a9cb8
         ),
     );
 
-    public static $fallbackDirsPsr0 = array (
-        0 => __DIR__ . '/..' . '/pear/pear-core-minimal/src',
-    );
-
     public static $classMap = array (
         'AllowDynamicProperties' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/AllowDynamicProperties.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
@@ -856,7 +861,7 @@ class ComposerStaticInit707f7590d632e07d7add8405a30a9cb8
         'DateObjectError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateObjectError.php',
         'DateRangeError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateRangeError.php',
         'Drupal' => __DIR__ . '/../..' . '/web/core/lib/Drupal.php',
-        'DrupalFinder\\DrupalFinder' => __DIR__ . '/..' . '/webflo/drupal-finder/src/DrupalFinder.php',
+        'Drupal\\Component\\Datetime\\Time' => __DIR__ . '/../..' . '/web/core/lib/Drupal/Component/Datetime/Time.php',
         'Drupal\\Component\\DependencyInjection\\Container' => __DIR__ . '/../..' . '/web/core/lib/Drupal/Component/DependencyInjection/Container.php',
         'Drupal\\Component\\DependencyInjection\\PhpArrayContainer' => __DIR__ . '/../..' . '/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php',
         'Drupal\\Component\\FileCache\\FileCacheFactory' => __DIR__ . '/../..' . '/web/core/lib/Drupal/Component/FileCache/FileCacheFactory.php',
@@ -879,7 +884,11 @@ class ComposerStaticInit707f7590d632e07d7add8405a30a9cb8
         'Drupal\\Core\\Site\\Settings' => __DIR__ . '/../..' . '/web/core/lib/Drupal/Core/Site/Settings.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
+        'OS_Guess' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/OS/Guess.php',
         'Override' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/Override.php',
+        'PEAR' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/PEAR.php',
+        'PEAR_Error' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/PEAR.php',
+        'PEAR_ErrorStack' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/PEAR/ErrorStack.php',
         'PEAR_Exception' => __DIR__ . '/..' . '/pear/pear_exception/PEAR/Exception.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
@@ -1271,6 +1280,7 @@ class ComposerStaticInit707f7590d632e07d7add8405a30a9cb8
         'PharIo\\Manifest\\ManifestLoader' => __DIR__ . '/..' . '/phar-io/manifest/src/ManifestLoader.php',
         'PharIo\\Manifest\\ManifestLoaderException' => __DIR__ . '/..' . '/phar-io/manifest/src/exceptions/ManifestLoaderException.php',
         'PharIo\\Manifest\\ManifestSerializer' => __DIR__ . '/..' . '/phar-io/manifest/src/ManifestSerializer.php',
+        'PharIo\\Manifest\\NoEmailAddressException' => __DIR__ . '/..' . '/phar-io/manifest/src/exceptions/NoEmailAddressException.php',
         'PharIo\\Manifest\\PhpElement' => __DIR__ . '/..' . '/phar-io/manifest/src/xml/PhpElement.php',
         'PharIo\\Manifest\\PhpExtensionRequirement' => __DIR__ . '/..' . '/phar-io/manifest/src/values/PhpExtensionRequirement.php',
         'PharIo\\Manifest\\PhpVersionRequirement' => __DIR__ . '/..' . '/phar-io/manifest/src/values/PhpVersionRequirement.php',
@@ -1309,6 +1319,7 @@ class ComposerStaticInit707f7590d632e07d7add8405a30a9cb8
         'Random\\RandomError' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/Random/RandomError.php',
         'Random\\RandomException' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/Random/RandomException.php',
         'ReturnTypeWillChange' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/ReturnTypeWillChange.php',
+        'SQLite3Exception' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/SQLite3Exception.php',
         'SebastianBergmann\\CliParser\\AmbiguousOptionException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php',
         'SebastianBergmann\\CliParser\\Exception' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/Exception.php',
         'SebastianBergmann\\CliParser\\OptionDoesNotAllowArgumentException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php',
@@ -1512,6 +1523,7 @@ class ComposerStaticInit707f7590d632e07d7add8405a30a9cb8
         'SensitiveParameter' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/SensitiveParameter.php',
         'SensitiveParameterValue' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/SensitiveParameterValue.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
+        'System' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/System.php',
         'TheSeer\\Tokenizer\\Exception' => __DIR__ . '/..' . '/theseer/tokenizer/src/Exception.php',
         'TheSeer\\Tokenizer\\NamespaceUri' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUri.php',
         'TheSeer\\Tokenizer\\NamespaceUriException' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUriException.php',
@@ -1530,7 +1542,6 @@ class ComposerStaticInit707f7590d632e07d7add8405a30a9cb8
             $loader->prefixLengthsPsr4 = ComposerStaticInit707f7590d632e07d7add8405a30a9cb8::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit707f7590d632e07d7add8405a30a9cb8::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit707f7590d632e07d7add8405a30a9cb8::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInit707f7590d632e07d7add8405a30a9cb8::$fallbackDirsPsr0;
             $loader->classMap = ComposerStaticInit707f7590d632e07d7add8405a30a9cb8::$classMap;
 
         }, null, ClassLoader::class);

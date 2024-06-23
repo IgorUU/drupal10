@@ -79,7 +79,6 @@
       <path value="$PROJECT_DIR$/vendor/open-telemetry/sem-conv" />
       <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
       <path value="$PROJECT_DIR$/vendor/behat/mink" />
-      <path value="$PROJECT_DIR$/vendor/behat/mink-selenium2-driver" />
       <path value="$PROJECT_DIR$/vendor/behat/mink-browserkit-driver" />
       <path value="$PROJECT_DIR$/vendor/open-telemetry/exporter-otlp" />
       <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
@@ -171,7 +170,6 @@
       <path value="$PROJECT_DIR$/vendor/drupal/coder" />
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
-      <path value="$PROJECT_DIR$/vendor/instaclick/php-webdriver" />
       <path value="$PROJECT_DIR$/vendor/phpstan/phpstan-deprecation-rules" />
       <path value="$PROJECT_DIR$/vendor/mck89/peast" />
       <path value="$PROJECT_DIR$/vendor/ratchet/rfc6455" />
@@ -186,6 +184,8 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
       <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
       <path value="$PROJECT_DIR$/vendor/kint-php/kint" />
+      <path value="$PROJECT_DIR$/vendor/lullabot/mink-selenium2-driver" />
+      <path value="$PROJECT_DIR$/vendor/lullabot/php-webdriver" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1">

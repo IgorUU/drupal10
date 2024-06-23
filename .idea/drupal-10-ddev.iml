@@ -28,10 +28,11 @@
       <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Uuid/" isTestSource="false" packagePrefix="Drupal\Component\Uuid\" />
       <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Version/" isTestSource="false" packagePrefix="Drupal\Component\Version\" />
       <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Core" isTestSource="false" packagePrefix="Drupal\Core\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/asm89/stack-cors" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/behat/mink" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/behat/mink-browserkit-driver" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/behat/mink-selenium2-driver" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/chi-teck/drupal-code-generator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/colinodell/psr-testlogger" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
@@ -61,7 +62,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/guzzle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/promises" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/instaclick/php-webdriver" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/justinrainbow/json-schema" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/league/container" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/masterminds/html5" />
@@ -194,6 +194,8 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/react/event-loop" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/react/socket" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/react/stream" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/lullabot/mink-selenium2-driver" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/lullabot/php-webdriver" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
